@@ -1,0 +1,122 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+img, embed, object, video {
+	max-width: 100%;
+}
+
+h1 {
+	font-size: 3.0vw;
+}
+
+h5 {
+	font-size: 1.5vw;
+}
+h2 {
+	font-size: 2.0vw;
+}
+p {
+	font-size: 2vmin;
+}
+
+/*
+ *
+ * Header
+ *
+ */
+ .inline_block {
+	display: inline;
+ }
+
+.header {
+	display: grid;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	grid-template-columns: 1fr 2fr;
+}
+
+
+.header_title {
+	text-align: right;	
+}
+
+.header_title_main{
+	font-family: Roboto;
+	color: #2d3c49;
+	font-weight: 100;
+	margin: 25px 25px 0px 0px;	
+}
+
+.header_title_sub{	
+	font-family: Roboto;
+	color: #2d3c49;
+	font-weight: 100;
+	margin: 5px 25px 0px 0px;	
+}
+
+/*
+ *
+ * Main Body
+ *	
+ */
+ 
+ .horizontal_line {
+	background-color: #7d97ad;
+	height: 2px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+ }
+ 
+.main_image {
+	width: 100%;
+	max-height: 10%;
+	margin: 0px;
+	margin-bottom: 0.5em;
+}
+
+.projects_section {
+}
+
+.project_section_header {
+	font-family: Roboto;
+	color: #7d97ad;
+	font-weight: 400;
+	padding-left: 5vw;
+}
+
+.projects {
+
+}
+
+.project {
+	max-width: 33%;
+	float: left;
+}
+
+ 
+.project_titles {
+	font-family: Roboto;
+	color: #2d3c49;
+	font-weight: 400;
+	font-size: 2vw;
+	text-align: center;
+ }
+ 
+ .project_link {
+	font-family: Roboto;
+	color: #2d3c49;
+	font-weight: 100;
+	font-size: 1vw;
+	text-align: center;
+	word-wrap: break-word;
+}
+
+.project-image{ 
+    text-align: center;
+	max-width: 100%;
+}
