@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+
 import datetime
 import psycopg2
 
@@ -22,7 +22,7 @@ def get_top3_popular_articles():
 
 
 def get_top3_popular_authors():
-    """Return Top 3 most viewed articles from the 'database'."""
+    """Return the most popular authors from the 'database'."""
     postsdb = psycopg2.connect(database=DB_NAME)
     cursor = postsdb.cursor()
     top3_authors = """select w.name, sum(p.views) from authors w,
@@ -41,7 +41,7 @@ def get_top3_popular_authors():
 
 
 def get_days_with_1pct_error():
-    """Return Top 3 most viewed articles from the 'database'."""
+    """Return the dates on which there wer more than 1 percent errors when requesting from the website."""
     postsdb = psycopg2.connect(database=DB_NAME)
     cursor = postsdb.cursor()
     errors = """select my_day, percentage as error_day from
